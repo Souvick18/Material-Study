@@ -5,15 +5,15 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
-import { BadgeComponent } from './badge/badge.component';
-import { BottomsheetComponent } from './bottomsheet/bottomsheet.component';
+// import { BadgeComponent } from './badge/badge.component';
+// import { BottomsheetComponent } from './bottomsheet/bottomsheet.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Autocomplete', pathMatch: 'full' },
 
   { path: 'Autocomplete',     component: AutocompleteComponent },
-  { path: 'Badge',            component: BadgeComponent},
-  { path: 'Bottomsheet',      component: BottomsheetComponent},
+  // { path: 'Badge',            component: BadgeComponent},
+  // { path: 'Bottomsheet',      component: BottomsheetComponent},
 ];
 
 @NgModule({
@@ -24,12 +24,14 @@ const routes: Routes = [
                   BrowserModule],
   declarations: [
                   AutocompleteComponent,
-                  BadgeComponent,
-                  BottomsheetComponent],
+                  // BadgeComponent,
+                  // BottomsheetComponent
+                ],
   exports:      [ RouterModule,
                   MaterialModule,
                   AutocompleteComponent,
-                  BadgeComponent,
-                  BottomsheetComponent]
+                  // BadgeComponent,
+                  // BottomsheetComponent
+                ]
 })
 export class AppRoutingModule { }
